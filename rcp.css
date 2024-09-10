@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+}.heading{
+    background-color: #152238;
+    height:5vh;
+    width:100vw;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    padding-top: 10px;
+}
+.choices{
+    height: 25vh;
+    width:100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 40px;
+    
+}
+.choicediv{
+    height: 23vh;
+    width:60vw;
+    display: flex;
+    justify-content:space-around;
+    /* align-items: center; */
+    /* margin: 60px; */
+}
+.stone{
+    height:170px;
+    width:170px;
+    /* border-radius: 530px; */
+    border:2px black;
+}
+.paper {
+    height: 170px;
+    width:170px;
+    /* border-radius: 720px; */
+    border:2px black;
+}
+.scissor {
+    height:170px;
+    width:170px;
+    /* border-radius: 1400px; */
+    border:2px black;
+}
+.stone img{
+    height:170px;
+    width:170px;
+    border-radius: 530px;
+    object-fit: fill;
+    cursor:pointer ;
+}
+.paper img {
+    height: 170px;
+    width:170px;
+    border-radius: 720px;
+    object-fit: fill;
+    cursor:pointer ;
+}
+.scissor img {
+    height:170px;
+    width:170px;
+    border-radius: 1400px;
+    object-fit: fill;
+    cursor:pointer ;
+}
+.stone img:hover{
+    border: 6px solid black;
+}
+.paper img:hover{
+    border: 6px solid black;
+}
+.scissor img:hover{
+    border: 6px solid black;
+}
+
+.scores{
+height:19vh;
+width:100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.user{
+ height:12vh;
+ width:12vw;
+ font-size: 40px;
+ text-align: center;
+}
+.computer{
+    height:12vh;
+    width:12vw;
+    font-size: 40px;
+    text-align: center;
+   }
+.results{
+    height:7vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.results p{
+    display :flex;
+    align-items: center;
+    justify-content: center;
+    height:6vh;
+    width:30vw;
+    background-color: black;
+    color: white;
+    border-radius:  6px;
+    text-align:center;
+    font-size: 30px;
+
+}
