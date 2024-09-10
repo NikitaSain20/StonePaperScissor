@@ -1,0 +1,2 @@
+# StonePaperScissor
+html,css.javascript
