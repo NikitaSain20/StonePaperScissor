@@ -23,3 +23,46 @@ A simple and responsive **Rock Paper Scissors** web game built with **HTML**, **
 ---
 
 ## 📂 File Structure
+
+rock-paper-scissors/
+│
+├── index.html # Main HTML file
+├── rcp.css # Stylesheet
+├── rcp1.js # JavaScript logic
+├── stone.jpeg # Stone image
+├── paper.jpeg # Paper image
+└── scissor.jpeg # Scissor image
+
+---
+
+## 💡 How to Run
+
+1. **Clone or download** this repository:
+
+2. **Open `index.html`** in your browser.
+
+---
+
+## 🎯 How to Play
+
+- Click on **Stone**, **Paper**, or **Scissor**
+- The computer will auto-select a move
+- The result and updated scores are displayed below
+
+---
+
+## 📸 Screenshots
+
+> _(Add your screenshots here if needed)_
+
+---
+
+## 🙌 Credits
+
+Built by [Your Name] — A simple game to brush up JavaScript and styling skills.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
