@@ -53,16 +53,10 @@ rock-paper-scissors/
 
 ## 📸 Screenshots
 
-> _(Add your screenshots here if needed)_
-
----
+## ![alt text](image.png)
 
 ## 🙌 Credits
 
-Built by [Your Name] — A simple game to brush up JavaScript and styling skills.
+Built by Nikita Sain — A simple game to brush up JavaScript and styling skills.
 
 ---
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
