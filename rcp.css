@@ -1,119 +1,168 @@
-*{
-    margin:0;
-    padding: 0;
-}.heading{
-    background-color: #152238;
-    height:5vh;
-    width:100vw;
-    text-align: center;
-    font-size: 22px;
-    color: white;
-    padding-top: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-.choices{
-    height: 25vh;
-    width:100vw;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin: 40px;
-    
+
+body {
+  background-color: rgb(86, 61, 139);
+  color: #333;
 }
-.choicediv{
-    height: 23vh;
-    width:60vw;
-    display: flex;
-    justify-content:space-around;
-    /* align-items: center; */
-    /* margin: 60px; */
+
+/* Heading */
+.heading {
+  background-color: lightcoral;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  padding: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.stone{
-    height:170px;
-    width:170px;
-    /* border-radius: 530px; */
-    border:2px black;
+
+/* Choices */
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  padding: 0 20px;
 }
-.paper {
-    height: 170px;
-    width:170px;
-    /* border-radius: 720px; */
-    border:2px black;
+
+.choicediv {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-.scissor {
-    height:170px;
-    width:170px;
-    /* border-radius: 1400px; */
-    border:2px black;
+
+.stone, .paper, .scissor {
+  height: 150px;
+  width: 150px;
 }
-.stone img{
-    height:170px;
-    width:170px;
-    border-radius: 530px;
-    object-fit: fill;
-    cursor:pointer ;
-}
-.paper img {
-    height: 170px;
-    width:170px;
-    border-radius: 720px;
-    object-fit: fill;
-    cursor:pointer ;
-}
+
+.stone img,
+.paper img,
 .scissor img {
-    height:170px;
-    width:170px;
-    border-radius: 1400px;
-    object-fit: fill;
-    cursor:pointer ;
-}
-.stone img:hover{
-    border: 6px solid black;
-}
-.paper img:hover{
-    border: 6px solid black;
-}
-.scissor img:hover{
-    border: 6px solid black;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.scores{
-height:19vh;
-width:100vw;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.user{
- height:12vh;
- width:12vw;
- font-size: 40px;
- text-align: center;
-}
-.computer{
-    height:12vh;
-    width:12vw;
-    font-size: 40px;
-    text-align: center;
-   }
-.results{
-    height:7vh;
-    width:100vw;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.stone img:hover,
+.paper img:hover,
+.scissor img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.results p{
-    display :flex;
-    align-items: center;
-    justify-content: center;
-    height:6vh;
-    width:30vw;
-    background-color: black;
-    color: white;
-    border-radius:  6px;
-    text-align:center;
+/* Scores */
+.scores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.user, .computer {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+}
+
+.user p:first-child,
+.computer p:first-child {
+  font-size: 42px;
+  font-weight: 700;
+  color: #008cff;
+}
+
+.user p:last-child,
+.computer p:last-child {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Results */
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  padding: 0 20px;
+}
+
+.results p {
+  background-color: #008cff;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .stone, .paper, .scissor {
+    height: 120px;
+    width: 120px;
+  }
+
+  .user p:first-child,
+  .computer p:first-child {
+    font-size: 36px;
+  }
+
+  .results p {
+    font-size: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stone, .paper, .scissor {
+    height: 100px;
+    width: 100px;
+  }
+
+  .user, .computer {
+    padding: 15px 20px;
+  }
+
+  .user p:first-child,
+  .computer p:first-child {
     font-size: 30px;
+  }
 
+  .results p {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .heading {
+    font-size: 22px;
+    padding: 15px 0;
+  }
+
+  .scores {
+    gap: 20px;
+  }
 }
